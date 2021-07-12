@@ -53,7 +53,6 @@
           awesome-git
           # Wayland
           kile-wl-git
-          river-git
           sway-unwrapped-git
           wlroots-git
           xdg-desktop-portal-wlr-git
