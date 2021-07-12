@@ -116,11 +116,6 @@
             src = args.kile-wl-src;
           });
 
-          river-git = pkgs.river.overrideAttrs (_: rec {
-            inherit version;
-            src = args.river-src;
-          });
-
           sway-unwrapped-git = (pkgs.sway-unwrapped.overrideAttrs (_: {
             inherit version;
             src = args.sway-src;
