@@ -11,7 +11,7 @@ stdenvNoCC.mkDerivation rec {
     sha256 = "sha256-afmQCOOZ1MwQkbZZNHYfq2+IRv2eOtYBrGVHzDEbUHw=";
   };
 
-  patches = [ "./canary.patch" ];
+  patches = [ ./canary.patch ];
 
   dontBuild = true;
 
