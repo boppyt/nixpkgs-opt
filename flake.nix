@@ -104,6 +104,7 @@
             });
           }));
 
+          discocss-canary = pkgs.callPackage ./pkgs/discocss-canary { };
 
           eww = pkgs.callPackage ./pkgs/eww {
             src = args.eww-src;
