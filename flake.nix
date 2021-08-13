@@ -20,7 +20,7 @@
     ytmdl-src = { url = "github:deepjyoti30/ytmdl"; flake = false; };
 
     # Utilities
-    eww-src = { url = "github:elkowar/eww"; flake = false; };
+    eww.url = "github:elkowar/eww";
 
     # Wayland
     kile-wl-src = { url = "gitlab:snakedye/kile"; flake = false; };
@@ -106,9 +106,7 @@
 
           discocss-canary = pkgs.callPackage ./pkgs/discocss-canary { };
 
-          eww = pkgs.callPackage ./pkgs/eww {
-            src = args.eww-src;
-          };
+          eww = args.eww.defaultPackage.${system};
 
           iosevka-pure-bin = pkgs.callPackage ./pkgs/iosevka-pure-bin { };
 
