@@ -55,9 +55,7 @@
           kile-wl-git
           sway-unwrapped-git
           wlroots-git
-          xdg-desktop-portal-wlr-git
-          # Fonts
-          iosevka-ft-bin;
+          xdg-desktop-portal-wlr-git;
       };
     }
     // flake-utils.lib.eachSystem [ "x86_64-linux" "aarch64-linux" ] (system:
@@ -109,6 +107,10 @@
           eww = args.eww.defaultPackage.${system};
 
           iosevka-pure-bin = pkgs.callPackage ./pkgs/iosevka-pure-bin { };
+
+          sf-mono-bin = pkgs.callPackage ./pkgs/sf-mono-bin { };
+
+          sf-mono-liga-bin = pkgs.callPackage ./pkgs/sf-mono-liga-bin { };
 
           kile-wl-git = pkgs.kile-wl.overrideAttrs (_: rec {
             inherit version;
