@@ -102,6 +102,8 @@
             });
           }));
 
+          boppy-input-font-bin = pkgs.callPackage ./pkgs/boppy-input-font-bin { };
+
           discocss-canary = pkgs.callPackage ./pkgs/discocss-canary { };
 
           eww = args.eww.defaultPackage.${system};
