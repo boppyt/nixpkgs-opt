@@ -1,7 +1,7 @@
 # nixpkgs-opt
 This is a optional nixpkgs package input by boppyt, based on fortuneteller2k's nixpkgs-f2k.
 
-## Disclaimer: this is totally based on my needs. Feel free to file a PR though!
+## This repository is superseded by chaotic-nixpkgs.
 
 # Usage
 
